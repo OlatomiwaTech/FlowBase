@@ -6,7 +6,7 @@ Built with **only HTML, CSS, and vanilla JavaScript** — no frameworks, no Tail
 
 Designed to look like a real SaaS product from a top-tier design team (inspired by Linear, Vercel, Notion, Stripe) — clean, fast, and deployable as-is.
 
-![Flowbase Preview](preview.png)
+![Flowbase Preview](image.png)
 
 ---
 
