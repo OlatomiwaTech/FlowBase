@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flowbase — Work smarter. Ship faster.</title>
+<meta name="description" content="Flowbase brings your projects, workflows, automation, and team collaboration into one beautifully simple workspace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a class="logo" href="#" aria-label="Flowbase home">
+      <span class="logo-mark"><span></span></span>
+      <span class="logo-type">Flowbase</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#product" class="nav-link">Product</a>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#resources" class="nav-link">Resources</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost" id="loginBtn">Login</a>
+      <a href="#pricing" class="btn btn-primary btn-sm">Start Free</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-inner">
+    <a class="badge" href="#changelog">
+      <span class="badge-dot"></span>
+      Introducing Flowbase 2.0
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <h1 class="hero-title">Work smarter.<br>Ship faster.</h1>
+    <p class="hero-sub">Flowbase brings your projects, workflows, automation, and team collaboration into one beautifully simple workspace.</p>
+    <div class="hero-ctas">
+      <form class="email-form" id="heroForm">
+        <input type="email" placeholder="Enter your work email" aria-label="Work email" required>
+        <button type="submit" class="btn btn-primary">Start for free</button>
+      </form>
+      <a href="#demo" class="btn btn-secondary"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 3.5L11 8L5 12.5V3.5Z" fill="currentColor"/></svg> Book a demo</a>
+    </div>
+    <p class="hero-trust">No credit card required • Free forever plan</p>
+
+    <div class="dashboard-wrap" id="product">
+      <div class="dashboard">
+        <aside class="dash-sidebar">
+          <div class="dash-sidebar-head"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+          <div class="dash-nav"><span class="dash-nav-item active">Overview</span><span class="dash-nav-item">Projects</span><span class="dash-nav-item">Automations</span><span class="dash-nav-item">Analytics</span></div>
+          <div class="dash-projects"><div class="dash-label">PROJECTS</div><div class="proj"><i></i> Orbit Launch</div><div class="proj"><i></i> Vertex Mobile</div><div class="proj active"><i></i> Nova Platform</div></div>
+        </aside>
+        <div class="dash-main">
+          <div class="dash-topbar"><h3>Nova Platform — Q4 Roadmap</h3><div class="avatars"><span>AK</span><span>MR</span><span>+3</span></div></div>
+          <div class="dash-grid">
+            <div class="dash-card"><div class="k">Tasks completed</div><div class="v" data-count="1,248">0</div><div class="bar"><span style="width:82%"></span></div></div>
+            <div class="dash-card"><div class="k">Active projects</div><div class="v" data-count="24">0</div><div class="meta"><span class="up">↑ 12%</span> vs last month</div></div>
+            <div class="dash-card"><div class="k">Completion rate</div><div class="v" data-count="94">0%</div><div class="ring-wrap"><div class="ring" style="--p:94"></div></div></div>
+          </div>
+          <div class="dash-tasks">
+            <div class="task head"><span>Task</span><span>Owner</span><span>Status</span></div>
+            <div class="task"><span><b>☐</b> Design system audit</span><span>AK</span><span class="pill done">Done</span></div>
+            <div class="task"><span><b>☐</b> API rate limiting</span><span>MR</span><span class="pill progress">In Progress</span></div>
+            <div class="task"><span><b>☐</b> Onboarding flow</span><span>SL</span><span class="pill high">High Priority</span></div>
+          </div>
+        </div>
+        <div class="dash-activity">
+          <div class="dash-label">Activity</div>
+          <div class="act"><div class="a-dot"></div><div><b>Mira</b> commented on API spec</div><span>2m</span></div>
+          <div class="act"><div class="a-dot green"></div><div><b>Automation</b> notified PM</div><span>5m</span></div>
+          <div class="act"><div class="a-dot"></div><div><b>Alex</b> completed design audit</div><span>18m</span></div>
+          <div class="weekly"><div class="dash-label">Weekly activity</div><div class="bars"><span style="--h:30%"></span><span style="--h:55%"></span><span style="--h:40%"></span><span style="--h:85%"></span><span style="--h:62%"></span><span style="--h:78%"></span><span style="--h:95%"></span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social-proof">
+  <div class="container">
+    <p class="eyebrow">Trusted by teams building the future</p>
+    <div class="logos">
+      <span class="logo-text"><i></i> Orbit</span>
+      <span class="logo-text"><i></i> Vertex</span>
+      <span class="logo-text"><i></i> Northstar</span>
+      <span class="logo-text"><i></i> Lumio</span>
+      <span class="logo-text"><i></i> Arc</span>
+      <span class="logo-text"><i></i> Nova</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Everything your team needs.<br>Nothing it doesn't.</h2>
+      <p>Replace the patchwork of tools with one workspace that actually feels like it was designed to work together.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Replace scattered tools</h3><p>Docs, tasks, timelines, and chat in one place. No more context switching.</p></div>
+      <div class="value-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v4M12 17v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M3 12h4M17 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Automate repetitive work</h3><p>Create triggers that move work forward while you focus on what matters.</p></div>
+      <div class="value-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.5"/><path d="M6 14l4-4 4 3 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>See what actually matters</h3><p>Real-time dashboards that show progress, bottlenecks, and priorities.</p></div>
+      <div class="value-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M5 20a7 7 0 0114 0" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Keep everyone aligned</h3><p>Comments, mentions, and live presence keep decisions clear.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section features">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div class="feature-text"><span class="chip">Planning</span><h2>Plan without the chaos</h2><p>Structure work your way. List, board, timeline, or calendar — same data, zero duplication.</p><ul><li>Flexible views that sync automatically</li><li>Dependencies and critical path</li><li>Team workload balancing</li></ul></div>
+      <div class="feature-visual"><div class="mock mini-board"><div class="col"><div class="col-h">To Do</div><div class="card-m">Research</div><div class="card-m">Wireframes</div></div><div class="col"><div class="col-h">In Progress</div><div class="card-m active">Design System</div></div><div class="col"><div class="col-h">Done</div><div class="card-m done">Discovery ✓</div></div></div></div>
+    </div>
+    <div class="feature-row reverse reveal">
+      <div class="feature-text"><span class="chip">Automation</span><h2>Automate the busywork</h2><p>If this, then that — but for real work. Build rules in seconds that assign, notify, and update without code.</p><ul><li>50+ triggers and actions</li><li>Conditional logic and branching</li><li>Works across all projects</li></ul></div>
+      <div class="feature-visual"><div class="mock automation-mini" id="autoMini"><div class="step when"><span>WHEN</span><select><option>New task created</option><option>Status changes</option></select></div><div class="arrow">↓</div><div class="step if"><span>IF</span><select id="condSelect"><option>Priority = High</option><option>Owner is empty</option></select></div><div class="arrow">↓</div><div class="step then"><span>THEN</span><div class="then-action">Notify PM</div></div></div></div>
+    </div>
+    <div class="feature-row reveal">
+      <div class="feature-text"><span class="chip">Analytics</span><h2>Know what is happening</h2><p>Stop guessing. Live reports show velocity, blockers, and team health at a glance.</p><ul><li>Custom dashboards</li><li>Forecasting and burn-down</li><li>Export to Notion, Sheets, or API</li></ul></div>
+      <div class="feature-visual"><div class="mock chart-mock"><div class="chart-header"><span>Velocity</span><span class="pill progress">+14% this week</span></div><svg viewBox="0 0 300 100" class="line-chart"><polyline points="0,80 40,60 80,65 120,40 160,45 200,20 240,35 300,10" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linejoin="round"/><circle cx="300" cy="10" r="4" fill="var(--primary)"/></svg><div class="legend"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div></div>
+    </div>
+    <div class="feature-row reverse reveal" id="resources">
+      <div class="feature-text"><span class="chip">Collaboration</span><h2>Built for collaboration</h2><p>Comment in context, mention teammates, share files, and see who is viewing what.</p><ul><li>Threaded comments and mentions</li><li>Live cursors and presence</li><li>Version history and restore</li></ul></div>
+      <div class="feature-visual"><div class="mock collab-mock"><div class="comment"><img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='32' height='32' rx='16' fill='%23E8E6FF'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter' font-weight='600'%3EAK%3C/text%3E%3C/svg%3E"><div><b>Aisha K.</b> Can we move this to next sprint?<span>2m ago</span></div></div><div class="comment reply"><img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect width='32' height='32' rx='16' fill='%23D1F0E0'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle'%3EMR%3C/text%3E%3C/svg%3E"><div><b>Marcus R.</b> Done — moved + added blocker link.</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section automation-builder-section">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Automation that feels like magic.</h2>
+      <p>Drag-free. Just click and configure. Try it — it's live.</p>
+    </div>
+    <div class="builder" id="builder">
+      <div class="builder-step"><div class="b-label">WHEN</div><div class="b-card" data-type="when"><select class="b-select" aria-label="When trigger"><option>New task created</option><option>Task status changes to Done</option><option>New comment added</option><option>Due date is approaching</option></select><div class="b-icon">⚡</div></div></div>
+      <div class="b-connector"><div class="line"></div><div class="dot"></div></div>
+      <div class="builder-step"><div class="b-label">IF</div><div class="b-card" data-type="if"><select class="b-select" id="builderIf"><option value="high">Priority = High</option><option value="empty">Assignee is empty</option><option value="overdue">Overdue by 2 days</option></select><div class="b-icon">◇</div></div></div>
+      <div class="b-connector"><div class="line"></div><div class="dot"></div></div>
+      <div class="builder-step"><div class="b-label">THEN</div><div class="b-card"><div class="b-action"><span>🔔</span> Notify project manager</div></div></div>
+      <div class="b-connector"><div class="line"></div><div class="dot"></div></div>
+      <div class="builder-step"><div class="b-label">AND</div><div class="b-card"><div class="b-action"><span>⏰</span> Create deadline reminder</div><div class="b-sub" id="builderPreview">Will notify Mira for high priority tasks</div></div></div>
+      <div class="builder-run"><button class="btn btn-primary" id="runAuto">Test automation ▶</button><span class="run-status" id="runStatus"></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section analytics">
+  <div class="container">
+    <div class="analytics-grid">
+      <div class="a-main">
+        <div class="a-head"><h3>Team productivity</h3><div class="toggle-year"><button class="active">Weekly</button><button>Monthly</button></div></div>
+        <div class="big-chart"><div class="big-bars"><div class="bar-col"><span style="--h:45%"><i></i></span><label>M</label></div><div class="bar-col"><span style="--h:68%"><i></i></span><label>T</label></div><div class="bar-col"><span style="--h:52%"><i></i></span><label>W</label></div><div class="bar-col"><span style="--h:90%"><i></i></span><label>T</label></div><div class="bar-col"><span style="--h:75%"><i></i></span><label>F</label></div><div class="bar-col"><span style="--h:88%"><i></i></span><label>S</label></div><div class="bar-col"><span style="--h:95%"><i></i></span><label>S</label></div></div></div>
+      </div>
+      <div class="a-side">
+        <div class="stat-card"><div class="stat-k">Tasks completed</div><div class="stat-v">1,248</div><div class="stat-meta"><span class="up">↑ 12%</span> last 7 days</div></div>
+        <div class="stat-card"><div class="stat-k">Active projects</div><div class="stat-v">24</div><div class="stat-meta">8 on track</div></div>
+        <div class="stat-card"><div class="stat-k">Avg. cycle time</div><div class="stat-v">2.4 days</div><div class="stat-meta"><span class="up">↓ 0.6d</span> faster</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head"><h2>Loved by teams who ship.</h2><a href="#" class="link">Read customer stories →</a></div>
+    <div class="test-grid">
+      <div class="test-card reveal"><div class="stars">★★★★★</div><p>"Flowbase replaced Notion, Asana, and Zapier for us. We finally have one source of truth and our cycle time dropped by 40%."</p><div class="author"><img alt="Avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' rx='20' fill='%23F3F1FF'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-weight='600'%3ESJ%3C/text%3E%3C/svg%3E"><div><b>Sarah Jenkins</b><span>VP Product, Orbit</span></div></div></div>
+      <div class="test-card reveal"><div class="stars">★★★★★</div><p>"The automation builder is unreal. We automated standup reports, bug triage, and client updates in one afternoon."</p><div class="author"><img alt="Avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' rx='20' fill='%23E6F7ED'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-weight='600'%3EDL%3C/text%3E%3C/svg%3E"><div><b>David Liu</b><span>CTO, Vertex Labs</span></div></div></div>
+      <div class="test-card reveal"><div class="stars">★★★★★</div><p>"It feels like Linear but for the whole company. Clean, fast, and our designers actually enjoy using it."</p><div class="author"><img alt="Avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' rx='20' fill='%23FFF1D6'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-weight='600'%3EAN%3C/text%3E%3C/svg%3E"><div><b>Amara N.</b><span>Design Lead, Lumio</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing" id="pricing">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Simple pricing. No surprises.</h2>
+      <p>Start free, scale when you need to.</p>
+      <div class="billing-toggle" role="tablist" aria-label="Billing period"><span>Monthly</span><button class="toggle" id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle yearly billing"><span class="knob"></span></button><span>Yearly <b class="save">Save 20%</b></span></div>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card"><h3>Starter</h3><div class="price"><span class="amount" data-monthly="$0" data-yearly="$0">$0</span><span>/month</span></div><p class="price-desc">Perfect for individuals and small side projects.</p><a href="#" class="btn btn-secondary full">Get started</a><ul><li>Up to 3 projects</li><li>Unlimited tasks</li><li>2 automations</li><li>Community support</li></ul></div>
+      <div class="price-card featured"><div class="popular">Most popular</div><h3>Growth</h3><div class="price"><span class="amount" data-monthly="$19" data-yearly="$15">$19</span><span>/month</span></div><p class="price-desc">For growing teams that need to move faster.</p><a href="#" class="btn btn-primary full">Start 14-day trial</a><ul><li>Unlimited projects</li><li>Unlimited automations</li><li>Advanced analytics</li><li>Team permissions</li><li>Integrations: Slack, GitHub, Figma</li><li>Priority support</li></ul></div>
+      <div class="price-card"><h3>Scale</h3><div class="price"><span class="amount" data-monthly="$49" data-yearly="$39">$49</span><span>/month</span></div><p class="price-desc">For companies with advanced security and control.</p><a href="#" class="btn btn-secondary full">Contact sales</a><ul><li>Everything in Growth</li><li>SSO & SAML</li><li>Audit logs</li><li>Custom retention</li><li>Dedicated success manager</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="container faq-inner">
+    <div class="faq-head"><h2>Frequently asked questions</h2><p>Everything you need to know about Flowbase.</p></div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item open"><button class="faq-q" aria-expanded="true">Is Flowbase free?<span class="faq-icon"></span></button><div class="faq-a"><p>Yes. Starter is free forever with 3 projects and unlimited tasks. No credit card required.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I cancel anytime?<span class="faq-icon"></span></button><div class="faq-a"><p>Absolutely. Cancel from Settings → Billing in one click. Data stays exportable for 30 days.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer team plans?<span class="faq-icon"></span></button><div class="faq-a"><p>Growth and Scale are built for teams. You get roles, permissions, workload view, and shared automations.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is my data secure?<span class="faq-icon"></span></button><div class="faq-a"><p>We are SOC 2 Type II compliant, encrypt at rest and in transit, with daily backups and EU residency options.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I integrate Flowbase with other tools?<span class="faq-icon"></span></button><div class="faq-a"><p>Yes — Slack, GitHub, Linear, Figma, Notion, Google Calendar, and 100+ more via API and Zapier/Make.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer a free trial?<span class="faq-icon"></span></button><div class="faq-a"><p>Growth includes a 14-day free trial with all features. No credit card needed to start.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta" id="demo">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-bg"></div>
+      <h2>Your team's best work starts here.</h2>
+      <p>Bring your projects, people, and processes together with Flowbase.</p>
+      <div class="cta-actions"><a href="#" class="btn btn-primary btn-lg">Start for free</a><a href="#" class="btn btn-ghost-inv btn-lg">Book a demo</a></div>
+      <div class="cta-trust">✓ SOC 2 certified ✓ GDPR ready ✓ 99.9% uptime</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="logo" href="#"><span class="logo-mark"><span></span></span><span class="logo-type">Flowbase</span></a><p>All-in-one productivity platform for modern teams.</p></div>
+      <div class="footer-col"><h4>Product</h4><a href="#">Features</a><a href="#">Integrations</a><a href="#pricing">Pricing</a><a href="#">Changelog</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Contact</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Help Center</a><a href="#">Community</a><a href="#">API</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a><a href="#">Cookies</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Flowbase. All rights reserved.</span><div class="footer-links"><a href="#">Status</a><a href="#">Twitter</a><a href="#">LinkedIn</a></div></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
